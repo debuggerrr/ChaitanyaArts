@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+   "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+   "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<constant name="struts.devMode" value="true" />
+	<package name="myPack" extends="struts-default">
+
+		<action name="eventInsertAction" class="com.ca.actions.EventInsertAction">
+			<result name="input">create_event.jsp</result>
+			<result name="success">Success.jsp</result>
+			<result name="error">Error.jsp</result>
+		</action>
+	</package>
+</struts>
